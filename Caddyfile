@@ -1,10 +1,10 @@
 https://bchain.institute {
-	tls ilya@apalkoff.ru
+	tls connect@bchain.institute
 	root /site/public
 
 
-git git@github.com/apalkoff/test_site {
-	hook /webhook my_secret
+git git@github.com/bchain-institute/site_src {
+	hook /webhook no_secret
 	path  /site
 	then ssh {$HOST_IP} cd /root/site/site; make all 
 }

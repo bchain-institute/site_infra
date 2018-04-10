@@ -1,4 +1,4 @@
-WEBSITE=test_site
+WEBSITE=bchain_site
 CADDY_NAME=$(WEBSITE)-caddy
 HOST_IP:=$(shell getent hosts `hostname`|cut -d\  -f1)
 
