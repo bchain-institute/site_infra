@@ -37,6 +37,7 @@ start-caddy: $(PWD)/.ssh /root/.ssh/authorized_keys
 .PHONY: stop-caddy
 stop-caddy:
 	docker rm -f $(CADDY_NAME)
+	rm -r $(PWD)/site
 
 .PHONY: restart-caddy
 restart-caddy:

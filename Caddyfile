@@ -5,6 +5,7 @@ https://bchain.institute {
 
 git git@github.com/bchain-institute/site_src {
 	hook /webhook no_secret
+	clone_args --recurse-submodules
 	path  /site
 	then ssh {$HOST_IP} cd /root/site_infra/site; make all 
 }
